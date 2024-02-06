@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+
 * {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 li {
@@ -17,4 +23,240 @@ body {
   max-width: 768px;
   box-sizing: border-box;
   border: 1px solid red;
+}
+
+:root {
+  --main-color: ;
+}
+
+.main-button {
+  padding: 0;
+  background: var(
+    --Button-Gradient,
+    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
+  );
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  height: 3.125rem;
+  width: 11.625rem;
+  border-radius: 25px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--White, #fff);
+  text-align: center;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* HEADER  */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.logo-image {
+  display: flex;
+  width: 12.3125rem;
+  height: 2.25rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.13rem;
+  background: var(--Grey-2, #eaeaea);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 15px;
+}
+
+.fa-solid-loc {
+  width: 12px;
+  height: 16px;
+}
+
+/* SECTION RESERVATION  */
+
+.wrapper-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.section-reservation {
+  display: flex;
+  justify-content: center;
+  background: var(--Background, #f6f6f6);
+}
+
+.section-reservation p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.section-reservation h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.section-reservation-text {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.button-reservation {
+  padding: 25px 0;
+}
+
+.button-reservation .main-button {
+  width: 13.625rem;
+}
+
+/* SECTION FONCTIONNEMENT  */
+
+.fa-solid-mobil,
+.fa-solid-list,
+.fa-solid-store {
+  height: 19.903px;
+  width: 13.019px;
+}
+
+.section-fonctionnement {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.card-fonctionnement {
+  display: flex;
+  justify-content: center;
+  width: 322.486px;
+  height: 78.379px;
+  background: var(--Background, #f6f6f6);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* SECTION RESTAURANT  */
+
+.section-restaurant {
+  background: var(--Background, #f6f6f6);
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.card-restaurant {
+  width: 21rem;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.img-restaurant {
+  width: 100%;
+  max-width: 21rem;
+  max-height: 13rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.bloc-card-restaurant {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.title-card p {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.title-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* FOOTER  */
+
+footer {
+  background: var(--Grey, #353535);
+}
+
+.wrapper-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+}
+
+.footer-logo p {
+  font-family: "Shrikhand", serif;
+  color: white;
+  font-size: 18px;
+}
+
+.fa-solid-utensils,
+.fa-solid-handcheck {
+  width: 11.9px;
+  height: 13px;
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer li {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
