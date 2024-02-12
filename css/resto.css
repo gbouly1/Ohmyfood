@@ -1,0 +1,103 @@
+.section-img {
+  height: 275px;
+  z-index: 1;
+}
+
+.section-img img {
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #f6f6f6;
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+}
+
+.titre-section {
+  display: flex;
+  align-items: center;
+  gap: 85px;
+  padding-top: 25px;
+}
+
+.titre-menu {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.titre-hearth {
+  cursor: pointer;
+  width: 22px;
+  height: 21px;
+  stroke-width: 2%;
+}
+
+/* SECTION PLATS  */
+
+.menu-second {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0 15px 0;
+}
+
+.menu-second h3 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-plats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+  gap: 5px;
+  border-radius: 15px;
+  background-color: white;
+  height: 4.3rem;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
+  width: 349px;
+  height: 69px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.card-plats h6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.plat-text {
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-text {
+  font-weight: 700;
+  color: #353535;
+}
+
+.wrapper-card-plat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wrap-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
