@@ -153,6 +153,7 @@ body {
 }
 
 .card-fonctionnement {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 322.486px;
@@ -160,6 +161,19 @@ body {
   background: var(--Background, #f6f6f6);
   border-radius: 20px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ellipse {
+  left: 0;
+  position: absolute;
+  border-radius: 50%;
+  background: #9356dc;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .wrapper-card {
