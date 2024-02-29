@@ -152,6 +152,12 @@ body {
   gap: 25px;
 }
 
+.wrapper-card-fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .card-fonctionnement {
   position: relative;
   display: flex;
@@ -197,6 +203,13 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+  max-width: unset;
+}
+
+.wrapper-card-restaurant {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .card-restaurant {
@@ -278,4 +291,44 @@ footer li {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+/* desktop  */
+@media (min-width: 768px) {
+  .main-container {
+    max-width: unset;
+  }
+
+  .wrapper-fonctionnement {
+    width: 1080px;
+  }
+
+  .wrapper-card-fonctionnement {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wrapper-restaurant {
+    max-width: 1080px;
+  }
+
+  .wrapper-card-restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-restaurant {
+    width: 30rem;
+  }
+
+  .card-restaurant img {
+    max-width: unset;
+  }
+
+  .section-menu {
+    margin: 0 500px;
+  }
 }
