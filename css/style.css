@@ -27,7 +27,6 @@ body {
   width: 100%;
   max-width: 768px;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 :root {
@@ -36,10 +35,7 @@ body {
 
 .main-button {
   padding: 0;
-  background: var(
-    --Button-Gradient,
-    linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
-  );
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   height: 3.125rem;
   width: 11.625rem;
@@ -54,7 +50,7 @@ body {
   border: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  animation: all 300ms ease-out;
+  transition: background 0.5s ease;
 }
 
 /* HEADER  */
@@ -251,7 +247,8 @@ body {
   width: 22px;
   height: 21px;
   stroke-width: 2%;
-  stroke: #9356dc;
+  stroke: black;
+  fill: none;
 }
 
 /* FOOTER  */
@@ -306,13 +303,13 @@ footer li {
 /* ANIMATION  */
 
 .main-button:hover {
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(255, 255, 255, 0.15) 100%
-    ),
-    linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
+  background: linear-gradient(201deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.titre-hearth:hover {
+  fill: url(#myGradient);
+  transition: fill 0.5s ease-out;
 }
 
 /* desktop  */
@@ -361,23 +358,4 @@ footer li {
   }
 
   /* footer  */
-  footer {
-    height: 114px;
-  }
-  .footer-list,
-  .wrapper-footer {
-    flex-direction: row;
-  }
-
-  .wrapper-footer {
-    padding: 65px;
-  }
-
-  .footer-list {
-    justify-content: flex-end;
-  }
-  .footer-list li {
-    display: flex;
-    align-items: center;
-  }
 }

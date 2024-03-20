@@ -101,3 +101,9 @@
   justify-content: center;
   padding-top: 40px;
 }
+
+/* animation  */
+
+.titre-hearth:hover {
+  fill: url(#myGradient);
+}
