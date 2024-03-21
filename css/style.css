@@ -377,4 +377,24 @@ footer li {
   }
 
   /* footer  */
+
+  .footer-list {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper-footer {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    position: absolute;
+    right: 25px;
+  }
+
+  footer {
+    padding-top: 45px;
+  }
 }
