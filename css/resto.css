@@ -59,8 +59,7 @@
 
 .card-plats {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 10px 0 10px;
   gap: 5px;
   border-radius: 15px;
@@ -69,6 +68,33 @@
   box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   width: 349px;
   height: 69px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.price-text {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  font-weight: 700;
+  color: #353535;
+  position: absolute;
+  right: 10px;
+  padding-top: 35px;
+}
+
+.check-icon {
+  position: absolute;
+  right: -75px;
+  transition: all 0.5s ease;
+  /* display: none; */
 }
 
 .price {
@@ -83,11 +109,6 @@
   font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.price-text {
-  font-weight: 700;
-  color: #353535;
 }
 
 .wrapper-card-plat {
@@ -106,4 +127,12 @@
 
 .titre-hearth:hover {
   fill: url(#myGradient);
+}
+
+.card-plats:hover .price-text {
+  right: 65px;
+}
+
+.card-plats:hover .check-icon {
+  right: 0px;
 }
