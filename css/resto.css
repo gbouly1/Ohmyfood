@@ -77,6 +77,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+  max-width: 85%;
 }
 
 .price-text {
@@ -124,6 +125,9 @@
 }
 
 /* animation  */
+/* .chicken {
+  text-overflow: unset !important;
+} */
 
 .titre-hearth:hover {
   fill: url(#myGradient);
@@ -135,4 +139,21 @@
 
 .card-plats:hover .check-icon {
   right: 0px;
+}
+
+.card-plats:hover .text-entry p {
+  padding-right: 65px;
+}
+
+.text-entry p,
+.text-entry h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 768px) {
+  .card-plats {
+    width: 500px;
+  }
 }
