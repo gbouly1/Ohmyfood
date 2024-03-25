@@ -99,6 +99,57 @@ header a {
   padding-bottom: 10px;
 }
 
+/* LOADER  */
+
+.loader {
+  z-index: 5;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  animation: loader-fade ease-in 3s;
+}
+
+.spin-loader {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #9356dc;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes loader-fade {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* SECTION RESERVATION  */
 
 .wrapper-reservation {
@@ -224,6 +275,10 @@ header a {
   gap: 50px;
 }
 
+.article-main {
+  position: relative;
+}
+
 .card-restaurant {
   width: 21rem;
   border-radius: 15px;
@@ -264,6 +319,9 @@ header a {
   stroke-width: 2%;
   stroke: black;
   fill: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 /* FOOTER  */
@@ -331,8 +389,16 @@ footer li {
   fill: url(#myGradient);
 }
 
-/* desktop  */
+/* tablette  */
+
 @media (min-width: 768px) {
+  .section-menu {
+    margin: 0;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
   body {
     margin: 0;
     display: flex;
