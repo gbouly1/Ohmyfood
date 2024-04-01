@@ -116,6 +116,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-top: 10px;
 }
 
 .wrap-button {
@@ -125,9 +126,6 @@
 }
 
 /* animation  */
-/* .chicken {
-  text-overflow: unset !important;
-} */
 
 .titre-hearth:hover {
   fill: url(#myGradient);
@@ -155,5 +153,29 @@
 @media (min-width: 768px) {
   .card-plats {
     width: 500px;
+  }
+}
+
+.fade1 {
+  animation: fade-section 0.3s linear;
+}
+
+.fade2 {
+  animation: fade-section 0.6s;
+}
+
+.fade3 {
+  animation: fade-section 0.9s linear;
+}
+
+@keyframes fade-section {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
