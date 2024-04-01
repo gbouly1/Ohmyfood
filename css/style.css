@@ -336,6 +336,11 @@ header a {
   stroke: black;
   fill: none;
   position: absolute;
+  right: -50px;
+}
+
+.menu-hearth {
+  position: absolute;
   right: 20px;
   bottom: 20px;
 }
@@ -366,17 +371,13 @@ footer {
   color: white;
 }
 
-ul {
-  padding: 0;
-}
-
 .icon-footer {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-footer li {
+footer p {
   color: white;
   font-size: 16px;
   font-weight: 500;
