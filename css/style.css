@@ -114,14 +114,13 @@ header a {
 
 .spin-loader {
   position: absolute;
-  left: 50%;
+  left: 47%;
   top: 50%;
   width: 48px;
   height: 48px;
   border: 5px solid #9356dc;
   border-bottom-color: transparent;
   border-radius: 50%;
-  display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
@@ -463,6 +462,10 @@ footer p {
 
   .section-menu {
     margin: 0 250px;
+  }
+
+  .spin-loader {
+    left: 50%;
   }
 
   /* footer  */
